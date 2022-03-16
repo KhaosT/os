@@ -7,7 +7,7 @@ KEY, SECRET, ENDPOINT, BUCKET, FILEPATH, FILENAME = [sys.argv[i+1] for i in rang
 
 session = boto3.session.Session()
 client = session.client('s3',
-                        region_name='nyc3',
+                        region_name='us-west-1',
                         endpoint_url='https://' + ENDPOINT,
                         aws_access_key_id = KEY,
                         aws_secret_access_key = SECRET)
