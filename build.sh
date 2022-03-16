@@ -112,8 +112,7 @@ build () {
 rm -rf "$BASE_DIR"/builds
 
 if [[ "$ARCH" == "all" ]]; then
-    build amd64
-    build i386
+    build arm64
 else
     build "$ARCH"
 fi
