@@ -78,7 +78,7 @@ build () {
 # LIVE-BUILD CONFIG #
 #-------------------#
 "
-  lb config --bootstrap-qemu-arch arm64 --bootstrap-qemu-static /usr/bin/qemu-arm-static
+  lb config
 
   echo -e "
 #------------------#
