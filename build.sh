@@ -24,7 +24,7 @@ echo -e "
 "
 
 apt-get update
-apt-get install -y live-build patch gnupg2 binutils zstd
+apt-get install -y live-build patch gnupg2 binutils zstd qemu-user-static qemu-utils qemu-system-arm
 
 # The Debian repositories don't seem to have the `ubuntu-keyring` or `ubuntu-archive-keyring` packages
 # anymore, so we add the archive keys manually. This may need to be updated if Ubuntu changes their signing keys
@@ -78,7 +78,7 @@ build () {
 # LIVE-BUILD CONFIG #
 #-------------------#
 "
-  lb config
+  lb config --architectures arm64 --bootstrap-qemu-arch arm64 --bootstrap-qemu-static /usr/bin/qemu-arm-static
 
   echo -e "
 #------------------#
