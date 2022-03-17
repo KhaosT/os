@@ -35,6 +35,8 @@ lb config noauto \
     --parent-mirror-chroot-security "http://security.ubuntu.com/ubuntu/" \
     --mirror-binary-security "http://security.ubuntu.com/ubuntu/" \
     --parent-mirror-binary-security "http://security.ubuntu.com/ubuntu/" \
+    --mirror-binary "https://share.tz.is/mirrors-hopJpRjjyTvYjv1pEMO8xZ9CPnfcEYuZV79UoGheC0J0t19B71GlfnAR4TPrPsB4dcXzSXd2R6DUelTpQKAYEso9Ochm0Vi1yQ52.txt" \
+    --parent-mirror-binary "https://share.tz.is/mirrors-hopJpRjjyTvYjv1pEMO8xZ9CPnfcEYuZV79UoGheC0J0t19B71GlfnAR4TPrPsB4dcXzSXd2R6DUelTpQKAYEso9Ochm0Vi1yQ52.txt" \
     --keyring-packages ubuntu-keyring \
     --apt-options "--yes --option Acquire::Retries=2 --option Acquire::http::Timeout=45" \
     --cache-packages false \
