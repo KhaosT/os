@@ -18,7 +18,7 @@ lb config noauto \
     --architectures "$ARCH" \
     --bootstrap-qemu-arch arm64 \
     --bootstrap-qemu-static /usr/bin/qemu-arm-static \
-    --bootloaders syslinux,grub-efi\
+    --bootloaders grub-efi\
     --mode ubuntu \
     --initramfs none \
     --distribution "$BASECODENAME" \
