@@ -37,6 +37,8 @@ apt-key adv --recv-keys --keyserver keyserver.ubuntu.com F6ECB3762474EDA9D21B702
 # This can be removed when our Debian container has a version containing this fix
 patch -d /usr/lib/live/build/ < live-build-fix-shim-remove.patch
 
+patch -d /usr/lib/live/build/ < live-build-fix-syslinux.patch
+
 # TODO: This can be removed when our Debian container has debootstrap 1.0.124 or later
 # It's needed to support the new zstd .deb package compression that Ubuntu is doing
 patch -d /usr/share/debootstrap/ < debootstrap-backport-zstd-support.patch
