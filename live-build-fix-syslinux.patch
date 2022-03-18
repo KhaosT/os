@@ -1,0 +1,11 @@
+--- binary_syslinux
++++ binary_syslinux_v2
+@@ -37,7 +37,7 @@ Check_stagefile
+ Acquire_lockfile
+ 
+ # Check architecture
+-Check_architectures amd64 i386
++Check_architectures amd64 i386 arm64
+ Check_crossarchitectures
+ 
+ case "${LB_INITRAMFS}" in
