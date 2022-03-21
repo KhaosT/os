@@ -7,7 +7,6 @@ user-setup
 
 efibootmgr
 grub-efi
-secureboot-db
 
 #if ARCHITECTURES arm64
 grub-efi-arm64
