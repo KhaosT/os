@@ -4,6 +4,7 @@ setserial
 user-setup
 
 efibootmgr
+grub2-common
 
 #if ARCHITECTURES arm64
 grub-efi-arm64
